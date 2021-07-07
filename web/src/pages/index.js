@@ -97,7 +97,7 @@ const IndexPage = (props) => {
         keywords={site.keywords}
       />
       <Container>
-        <h1>Welcome to {site.title}</h1>
+        <h1> The <span className="title">EasyBreezy</span> Investor</h1>
         <h2>{site.subtitle}</h2>
         {postNodes && (
           <BlogPostPreviewList

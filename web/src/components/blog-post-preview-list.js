@@ -10,7 +10,7 @@ function BlogPostPreviewGrid(props) {
   const [changeView, setView] = useState("grid");
   return (
     <div className={styles.root}>
-      {props.title && <h2 className={styles.headline}>{props.title}</h2>}
+      {/* {props.title && <h2 className={styles.headline}>{props.title} LOL</h2>} */ }
       <div className={styles.view}>
         <ViewModuleIcon  onClick={() => setView("list")}/>
         <ViewAgendaIcon  onClick={() => setView("grid")}/>

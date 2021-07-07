@@ -6,8 +6,18 @@
   padding: 1.5em;
   margin: 0 auto;
 
+  @nest & h2 {
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   @nest & h1 {
-    color: red;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (--media-min-small) {

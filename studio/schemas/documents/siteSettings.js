@@ -10,6 +10,11 @@ export default {
       title: "Title",
     },
     {
+      name: 'subtitle',
+      type: 'string',
+      title: "subtitle",
+    },
+    {
       name: "description",
       type: "text",
       title: "Description",

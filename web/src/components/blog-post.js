@@ -31,21 +31,23 @@ function BlogPost(props) {
           />
         </div>
       )}
+      
       <Container>
-        <div className={styles.grid}>
-          <div className={styles.mainContent}>
-            <h1 className={styles.title}>{title}</h1>
-            {_rawBody && <PortableText blocks={_rawBody} />}
-          </div>
-          <aside className={styles.metaContent}>
-            {publishedAt && (
+      {publishedAt && (
               <div className={styles.publishedAt}>
                 {differenceInDays(new Date(publishedAt), new Date()) > 3
                   ? formatDistance(new Date(publishedAt), new Date())
                   : format(new Date(publishedAt), "MMMM Mo, yyyy")}
               </div>
             )}
-            {authors && <AuthorList items={authors} title="Authors" />}
+        <div className={styles.grid}>
+          <div className={styles.mainContent}>
+            <h1 className={styles.title}>{title}</h1>
+            {_rawBody && <PortableText blocks={_rawBody} />}
+          </div>
+          <aside className={styles.metaContent}>
+           
+            {authors && <AuthorList items={authors} title="Author" />}
             {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>

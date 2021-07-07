@@ -24,6 +24,7 @@
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-postcss": "^4.0.0",
+    "gatsby-plugin-prettier-eslint": "^1.0.6",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-source-sanity": "^7.0.2",
     "react": "^17.0.2",

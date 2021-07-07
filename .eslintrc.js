@@ -1,29 +1,22 @@
 module.exports = {
-  parser: "babel-eslint",
-  parserOptions: {
-    sourceType: "module",
-    ecmaVersion: 2020,
-    ecmaFeatures: {
-      jsx: true,
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-  },
-  env: {
-    node: true,
-    browser: true,
-  },
-  rules: {
-    "react/prop-types": "off",
-  },
-  extends: [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-  ],
-  settings: {
-    react: {
-      pragma: "React",
-      version: "detect",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
     },
-  },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+    }
 };

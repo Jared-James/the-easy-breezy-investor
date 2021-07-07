@@ -6,6 +6,10 @@
   padding: 1.5em;
   margin: 0 auto;
 
+  @nest & h1 {
+    color: red;
+  }
+
   @media (--media-min-small) {
     padding: 2em;
   }

@@ -17,3 +17,10 @@ body > div,
 body > div > div {
   height: 100%;
 }
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

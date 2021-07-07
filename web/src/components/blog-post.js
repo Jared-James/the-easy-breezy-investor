@@ -48,7 +48,7 @@ function BlogPost(props) {
           <aside className={styles.metaContent}>
            
             {authors && <AuthorList items={authors} title="Author" />}
-            {categories && (
+            {/* {categories && (
               <div className={styles.categories}>
                 <h3 className={styles.categoriesHeadline}>Categories</h3>
                 <ul>
@@ -57,7 +57,7 @@ function BlogPost(props) {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
           </aside>
         </div>
       </Container>

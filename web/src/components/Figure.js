@@ -2,6 +2,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import clientConfig from "../../client-config";
+import AuthorList from "./author-list";
 
 export const Figure = ({ node }) => {
   if (!node || !node.asset || !node.asset._id) {
@@ -13,7 +14,7 @@ export const Figure = ({ node }) => {
     clientConfig.sanity
   );
   return (
-    <figure>
+    <figure className="figure">
       <GatsbyImage image={gatsbyImageData} alt={node.alt} />
       <figcaption>{node.caption}</figcaption>
     </figure>

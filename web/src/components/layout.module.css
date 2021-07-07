@@ -12,6 +12,7 @@
 
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
+  background-color: #6c757d;
 
   @nest & a {
     color: inherit;
@@ -28,7 +29,7 @@
 .footerWrapper {
   box-sizing: border-box;
   max-width: 960px;
-  padding: 4.5em 1.5em 1.5em;
+  padding: 3em 1.5em 1.5em;
   margin: 0 auto;
 
   @media (--media-min-small) {

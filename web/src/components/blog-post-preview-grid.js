@@ -6,7 +6,6 @@ import React from "react";
 function BlogPostPreviewGrid(props) {
   return (
     <div className={styles.root}>
-      
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
       <ul className={styles.grid}>
         {props.nodes &&
@@ -16,11 +15,11 @@ function BlogPostPreviewGrid(props) {
             </li>
           ))}
       </ul>
-      {/* {props.browseMoreHref && (
+      {props.browseMoreHref && (
         <div className={styles.browseMoreNav}>
           <Link to={props.browseMoreHref}>Browse more</Link>
         </div>
-      )} */}
+      )}
     </div>
   );
 }

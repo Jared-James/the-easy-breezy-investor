@@ -12,8 +12,8 @@ function BlogPostPreviewGrid(props) {
     <div className={styles.root}>
       {props.title && <h2 className={styles.headline}>{props.title}</h2>}
       <div className={styles.view}>
-        <ViewModuleIcon classname={styles.point} onClick={() => setView("list")}/>
-        <ViewAgendaIcon classname={styles.point} onClick={() => setView("grid")}/>
+        <ViewModuleIcon  onClick={() => setView("list")}/>
+        <ViewAgendaIcon  onClick={() => setView("grid")}/>
       </div>
       <ul className={changeView === "grid" ? styles.grid : styles.list}>
         {props.nodes &&

@@ -56,6 +56,10 @@
   }
 }
 
+.button {
+  padding: 1rem;
+}
+
 .list {
   display: none;
 

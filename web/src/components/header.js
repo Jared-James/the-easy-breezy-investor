@@ -17,7 +17,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             <li>About</li>
             <li>FAQ</li>
           </ul>
-          <div>
+          <div className={styles.button}>
             <Button variant="outlined" color="primary">
               Contact <MailOutlineIcon className={styles.chaticon} />
             </Button>

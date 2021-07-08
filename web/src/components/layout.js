@@ -30,16 +30,15 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
             <li>
               <Scroll showBelow={250} />
             </li>
-            <li>|</li>
+            <li className={styles.line}><span>|</span></li>
             <li className={styles.siteInfo}>
-              {" "}
               &copy; {new Date().getFullYear()}, The EasyBreezy Investor{" "}
             </li>
-            <li>|</li>
+            <li className={styles.line}><span>|</span></li>
             <li className={styles.footer__list}> Legal Stuff</li>
-            <li>|</li>
+            <li className={styles.line}><span>|</span></li>
             <li className={styles.footer__list}>Privacy policy</li>
-            <li>|</li>
+            <li className={styles.line}><span>|</span></li>
             <li>Made By: <a href="https://github.com/Jared-James" target="_blank"><Icon  icon={githubIcon} width="2rem"/></a></li>
           </ul>
         </div>

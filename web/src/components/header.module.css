@@ -117,3 +117,7 @@
 .chaticon {
   margin-left: 0.5rem;
 }
+
+.line {
+  display: none;
+}

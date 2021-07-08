@@ -16,13 +16,12 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
           <ul className={styles.list}>
             <li>About</li>
             <li>FAQ</li>
-            <li>
-              <Button variant="outlined" color="primary" >
-                Contact
-                {/* Contact <MailOutlineIcon className={styles.chaticon} /> */}
-              </Button>
-            </li>
           </ul>
+          <div>
+            <Button variant="outlined" color="primary">
+              Contact <MailOutlineIcon className={styles.chaticon} />
+            </Button>
+          </div>
         </div>
       </div>
     </div>

@@ -35,6 +35,26 @@
     }
   }
 }
+.about {
+  display: none;
+
+  @media (min-width: 450px) {
+    display: flex;
+    flex-direction: color;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+
+    @nest & li {
+      padding: 0 1rem;
+
+      @nest &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+}
 
 .list {
   display: none;

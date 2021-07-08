@@ -1,5 +1,5 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
 
 .root {
   position: relative;
@@ -20,10 +20,11 @@
 .branding {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
+  max-width: 100%;
   font-weight: 600;
   @nest & a {
-    padding: 0.5em;
+    /* padding: 0.5em; */
     color: inherit;
     text-decoration: none;
 
@@ -36,39 +37,23 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  font-weight: 600;
-   
-  @nest & li {
-    padding: 0 1rem;
+  display: none;
 
-    @nest &:hover {
-      color: var(--color-accent);
+  @media (min-width: 450px) {
+    display: flex;
+    flex-direction: color;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+
+    @nest & li {
+      padding: 0 1rem;
+
+      @nest &:hover {
+        color: var(--color-accent);
+      }
     }
-  }
-}
-
-.toggleNavButton {
-  appearance: none;
-  font-size: 25px;
-  border: none;
-  background: none;
-  margin: 0;
-  padding: calc(14 / 17 / 2 * 1rem);
-  outline: none;
-  color: inherit;
-
-  & svg {
-    display: block;
-    fill: inherit;
-  }
-
-  @media (--media-min-small) {
-    display: none;
   }
 }
 

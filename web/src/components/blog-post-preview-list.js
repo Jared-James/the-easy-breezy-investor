@@ -10,10 +10,13 @@ function BlogPostPreviewGrid(props) {
   const [changeView, setView] = useState("grid");
   return (
     <div className={styles.root}>
-      {/* {props.title && <h2 className={styles.headline}>{props.title} LOL</h2>} */ }
       <div className={styles.view}>
-        <ViewModuleIcon  onClick={() => setView("list")}/>
-        <ViewAgendaIcon  onClick={() => setView("grid")}/>
+        <span>
+          <ViewModuleIcon onClick={() => setView("grid")} />
+        </span>
+        <span>
+          <ViewAgendaIcon onClick={() => setView("list")} />
+        </span>
       </div>
       <ul className={changeView === "grid" ? styles.grid : styles.list}>
         {props.nodes &&

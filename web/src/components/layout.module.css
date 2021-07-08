@@ -1,5 +1,5 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
 
 .content {
   background: var(--color-white);
@@ -12,7 +12,8 @@
 
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
-  background-color: #ffd8be;
+  background-color: #caf0f8;
+  max-width: 100%;
 
   @nest & a {
     color: inherit;
@@ -28,22 +29,48 @@
 
 .footerWrapper {
   box-sizing: border-box;
-  max-width: 960px;
-  padding: 3em 1.5em 1.5em;
-  margin: 0 auto;
+  max-width: 100%;
+  padding: 3em 1em 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @nest & ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+
+    @media (min-width: 768px) {
+      flex-direction: row
+    }
+
+    
+
+    @nest & li {
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @nest & a {
+        margin-left: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
 
   @media (--media-min-small) {
     padding: 6em 2em 2em;
   }
 }
 
-.companyAddress {
-  text-align: center;
-  margin: 0 0 1rem;
-}
-
-.siteInfo {
-  text-align: center;
-  font-size: var(--font-small-size);
-  line-height: var(--font-small-line-height);
+.footer__list {
+  @nest &:hover {
+    color: #f72585;
+    cursor: pointer;
+  }
 }

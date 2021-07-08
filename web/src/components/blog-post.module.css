@@ -3,10 +3,6 @@
 
 .root {}
 
-.title {
-  composes: responsiveTitle1 from './typography.module.css';
-}
-
 .mainImage {
   display: block;
   position: relative;
@@ -42,6 +38,7 @@
         color: inherit;
       }
     }
+    
   }
 
   @nest & h2, & h3, & h4, & h5, & h6 {

@@ -12,7 +12,7 @@
 
 .footer {
   border-top: 1px solid var(--color-very-light-gray);
-  background-color: #caf0f8;
+  background-color: #f7f7ff;
   max-width: 100%;
 
   @nest & a {

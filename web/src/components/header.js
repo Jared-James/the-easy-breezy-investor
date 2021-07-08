@@ -17,7 +17,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
             <li>About</li>
             <li>FAQ</li>
             <li>
-              <Button variant="contained" color="primary" >
+              <Button variant="outlined" color="primary" >
                 Contact
                 {/* Contact <MailOutlineIcon className={styles.chaticon} /> */}
               </Button>

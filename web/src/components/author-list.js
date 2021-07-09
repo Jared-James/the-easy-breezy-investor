@@ -2,6 +2,7 @@ import * as styles from "./author-list.module.css";
 import React from "react";
 import { buildImageObj } from "../lib/helpers";
 import { imageUrlFor } from "../lib/image-url";
+import { Link } from "gatsby";
 
 function AuthorList({ items, title }) {
   return (
@@ -26,8 +27,8 @@ function AuthorList({ items, title }) {
                   )}
                 </div>
               </div>
-              <div>
-                <div>{authorName || <em>Missing name</em>}</div>
+              <div className={styles.link}>
+                <div ><Link to="/about">Brianna</Link></div>
               </div>
             </li>
           );

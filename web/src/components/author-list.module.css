@@ -17,6 +17,16 @@
   padding: 0;
 }
 
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .listItem {
   font-size: var(--font-small-size);
   margin: 1rem 0;

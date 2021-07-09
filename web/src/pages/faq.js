@@ -7,7 +7,7 @@ const Faq = () => (
   <Layout>
     <SEO title="faq" />
     <div className={styles.container}>
-      <div className={styles.container__title}><h1>Welcome!</h1></div>
+      <div className={styles.container__title}><h1>FAQ!</h1></div>
       <div className={styles.container__about}>
         <h1>Most asked questions</h1>
         <ul>

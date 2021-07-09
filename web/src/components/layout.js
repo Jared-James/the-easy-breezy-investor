@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import { Link } from "gatsby";
 import Scroll from './scroll';
 import "../styles/layout.css";
 import * as styles from "./layout.module.css";
@@ -35,9 +36,9 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
               &copy; {new Date().getFullYear()}, The EasyBreezy Investor{" "}
             </li>
             <li className={styles.line}><span>|</span></li>
-            <li className={styles.footer__list}> Legal Stuff</li>
+            <li className={styles.footer__list}><Link to="/legal">Legal Stuff</Link></li>
             <li className={styles.line}><span>|</span></li>
-            <li className={styles.footer__list}>Privacy policy</li>
+            <li className={styles.footer__list}><Link to="/privacy">Privacy policy</Link></li>
             <li className={styles.line}><span>|</span></li>
             <li>Made By: <a href="https://github.com/Jared-James" target="_blank"><Icon  icon={githubIcon} width="2rem"/></a></li>
           </ul>

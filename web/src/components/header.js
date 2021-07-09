@@ -11,12 +11,12 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/">The EasyBreezy Investor</Link>
         <div className={styles.about}>
           <ul className={styles.list}>
-            <li>About</li>
-            <li>FAQ</li>
-            <li>Contact</li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
          
         </div>

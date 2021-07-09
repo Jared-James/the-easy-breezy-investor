@@ -1,13 +1,17 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
+@import "../styles/custom-media.css";
+@import "../styles/custom-properties.css";
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Parisienne&family=Roboto:wght@100&display=swap");
 
-.root {}
+.title {
+  font-family: "Bitter", serif;
+}
 
 .mainImage {
   display: block;
   position: relative;
   background: var(--color-very-light-gray);
-
 
   @nest & img {
     display: block;
@@ -38,11 +42,6 @@
         color: inherit;
       }
     }
-    
-  }
-
-  @nest & h2, & h3, & h4, & h5, & h6 {
-    font-weight: 600;
   }
 
   @nest & figure {
@@ -63,8 +62,10 @@
 }
 
 .publishedAt {
-  composes: small from './typography.module.css';
-  color: var(--color-gray);
+  
+  color: #000;
+  font-family: "Bitter", serif;
+  font-weight: 500;
 }
 
 .categories {
@@ -83,6 +84,6 @@
 }
 
 .categoriesHeadline {
-  composes: base from './typography.module.css';
+  composes: base from "./typography.module.css";
   margin: 0.5rem 0 0;
 }

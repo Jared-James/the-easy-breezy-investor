@@ -8,7 +8,7 @@ const Legal = () => (
     <SEO title="legal" />
     <div className={styles.container}>
       <div className={styles.container__title}>
-        <h1>Legal</h1>
+        <h1>The Good ol Legal</h1>
       </div>
       <div className={styles.container__about}>
         <h1>Terms and Conditions</h1>

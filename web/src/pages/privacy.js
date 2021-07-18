@@ -8,7 +8,7 @@ const Privacy = () => (
     <SEO title="Privacy" />
     <div className={styles.container}>
       <div className={styles.container__title}>
-        <h1>Privacy!</h1>
+        <h1>The Good ol Privacy</h1>
       </div>
       <div className={styles.container__about}>
         <h1>Privacy Policy</h1>

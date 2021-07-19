@@ -7,7 +7,15 @@ const Header = () => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to="/"><StaticImage src="../images/logo.png" alt="Logo" /></Link>
+        <Link to="/">
+          <StaticImage 
+        src="../images/logo.png" 
+        alt="Logo" 
+        placeholder="blurred"
+        layout="constrained"
+        width={150}
+        objectFit="cover"
+        /></Link>
         <div className={styles.about}>
           <ul className={styles.list}>
             <li>

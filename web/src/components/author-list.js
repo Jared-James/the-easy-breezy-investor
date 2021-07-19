@@ -28,7 +28,7 @@ function AuthorList({ items, title }) {
                 </div>
               </div>
               <div className={styles.link}>
-                <div ><Link to="/about">Briannainversus</Link></div>
+                <div ><Link to="/about">Brianna</Link></div>
               </div>
             </li>
           );

@@ -1,12 +1,13 @@
 import { Link } from "gatsby";
 import React from "react";
 import * as styles from "./header.module.css";
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to="/">The EasyBreezy Investor</Link>
+        <Link to="/"><StaticImage src="../images/logo.png" alt="Logo" /></Link>
         <div className={styles.about}>
           <ul className={styles.list}>
             <li>

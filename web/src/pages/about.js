@@ -35,7 +35,11 @@ const About = () => (
         </p>
       </div>
       <div>
-        <a href="https://www.linkedin.com/in/brie-cox/" target="_blank"><FaLinkedin style={{height: "100px", fontSize: "1.5rem", color: "blue"}}/></a>
+        <a href="https://www.linkedin.com/in/brie-cox/" target="_blank">
+          <FaLinkedin
+            style={{ height: "100px", fontSize: "1.5rem", color: "black" }}
+          />
+        </a>
       </div>
     </div>
   </Layout>

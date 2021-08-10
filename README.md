@@ -1,4 +1,4 @@
-## Financial Blog
+## The Easy Breezy Investor
 
 https://www.theeasybreezyinvestor.com/
 

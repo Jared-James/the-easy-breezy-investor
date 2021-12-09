@@ -53,7 +53,11 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => {
             </li>
             <li>
               Made By:{" "}
-              <a href="https://github.com/Jared-James" target="_blank">
+              <a
+                href="https://github.com/Jared-James"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Icon icon={githubIcon} width="2rem" />
               </a>
             </li>

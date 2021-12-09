@@ -35,7 +35,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  background: #202020;
+  color: #fff;
   @media (min-width: 768px) {
     padding: 3em 1em 1.5em;
   }
@@ -49,11 +50,8 @@
     list-style-type: none;
 
     @media (min-width: 768px) {
-      flex-direction: row
+      flex-direction: row;
     }
-
-    
-   
 
     @nest & li {
       margin-right: 1rem;
@@ -67,10 +65,8 @@
       }
 
       @nest & span {
-       
       }
     }
-   
   }
 
   @media (--media-min-small) {
@@ -94,5 +90,5 @@
     @media (min-width: 768px) {
       display: block;
     }
-   }
+  }
 }
